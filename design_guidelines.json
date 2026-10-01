@@ -1,0 +1,108 @@
+{
+  "project_title": "Um Pequeno Universo Feito Para Cecília (14 Anos)",
+  "language": "pt-BR",
+  "theme": {
+    "mode": "dark",
+    "emotional_arc": "Calm -> Curiosity -> Enchantment -> Emotional Explosion -> Calm",
+    "primary_bg": "#180E29",
+    "secondary_bg": "#3B2160",
+    "light_lilac": "#E9DDF7",
+    "honey_gold": "#E8B34E",
+    "cream_white": "#FBF8FF",
+    "soft_pink": "#F3A6C9"
+  },
+  "typography": {
+    "headings_and_display": {
+      "family": "'Fraunces', 'Playfair Display', serif",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Baloo+2:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap",
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-serif text-[#E9DDF7] tracking-tight font-light",
+      "climax_title": "text-5xl sm:text-6xl lg:text-7xl font-serif text-[#FBF8FF] tracking-tight font-black drop-shadow-[0_0_25px_rgba(232,179,78,0.6)]"
+    },
+    "body_and_labels": {
+      "family": "'Quicksand', 'Baloo 2', sans-serif",
+      "body_text": "text-base sm:text-lg text-[#E9DDF7]/90 leading-relaxed font-sans",
+      "label_badge": "text-xs sm:text-sm font-semibold text-[#E8B34E] tracking-[0.25em] uppercase font-sans"
+    }
+  },
+  "layout_architecture": {
+    "structure": "Single-page 3-Act Scroll Experience (No Navbar, No standard header menu, No template look)",
+    "act_1": {
+      "height": "100vh",
+      "style": "Radial purple gradient background (#180E29 to #0D0717), tiny sparkling dust particles on canvas, subtle noise texture.",
+      "content": "Centered gold pill badge 'para Cecília, 14 anos', massive emotional header 'Feliz aniversário 💜', editable personalized paragraph, bottom pulse indicator 'role para continuar ↓'."
+    },
+    "act_2": {
+      "scroll_height": "650vh",
+      "viewport_behavior": "Sticky 100vh canvas/viewport pinned while scroll position drives Framer Motion animations linearly across 4 chapters.",
+      "chapters": [
+        {
+          "id": "capitulo_1_portal",
+          "progress_range": [0.0, 0.25],
+          "visuals": "Dozens of golden & lilac ambient particles converging to center into a glowing conic-gradient ring (gold + lilac) with outer glow and subtle rotation.",
+          "text": "'feche os olhos, respire, e role pra reviver esse dia'"
+        },
+        {
+          "id": "capitulo_2_revelacao",
+          "progress_range": [0.25, 0.50],
+          "visuals": "Portal morphs into a rounded frame with overshoot spring scaling, slight 3D rotation (rotateX/rotateY), dashed gold border, orbiting stars.",
+          "content": "Editable cozy teddy-bear image container + caption 'cada aventura boba com você vale mais que mil perfeitas.'"
+        },
+        {
+          "id": "capitulo_3_galeria_em_orbita",
+          "progress_range": [0.50, 0.75],
+          "visuals": "4-6 polaroid memory frames enter from edges (top-left, bottom-right, etc.) choreographing into an orbiting 3D system with subtle depth z-index shifts and organic tilts.",
+          "content": "Caption: 'cada foto aqui é um pedacinho da nossa história.' Editable image upload / link triggers for each polaroid.",
+          "mobile_composition": "Optimized stack or mini orbital arc designed for phone viewports without clipping."
+        },
+        {
+          "id": "capitulo_4_climax",
+          "progress_range": [0.75, 1.0],
+          "visuals": "Scroll-controlled particle explosion radiating outwards (hearts, gold dust, stars, confetti). Darkened backdrop for high contrast.",
+          "text": "Huge text growth 'Feliz aniversário, Cecília 💜' with overshoot, gold/lilac text-shadow and soft 3D depth."
+        }
+      ]
+    },
+    "act_3": {
+      "height": "auto min-h-screen",
+      "style": "Return to peaceful calm atmosphere with deep purple gradient & slow floating stars.",
+      "content": "Subheading 'antes de você ir' / 'um último recado', editable final handwritten-style letter card, custom golden audio player."
+    }
+  },
+  "key_components": {
+    "custom_music_player": {
+      "type": "Custom Floating / Fixed Minimalist Circular Audio Player",
+      "elements": "Circular gold gradient play/pause button (#E8B34E), smooth progress arc/bar, current time display, song title, subtle shine micro-animation. NO native audio element controls displayed."
+    },
+    "editable_placeholders": {
+      "behavior": "In-place editable text blocks and clickable photo upload/URL changers so the giver can personalize the message for Cecília.",
+      "persisted_state": "Saved in React state or localStorage for instant editing & viewing."
+    }
+  },
+  "image_urls": {
+    "teddy_bear_placeholder": "https://images.unsplash.com/photo-1603394466692-928fa6232658?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxjdXRlJTIwcGx1c2glMjB0ZWRkeSUyMGJlYXIlMjB2aW50YWdlJTIwY296eSUyMHB1cnBsZSUyMGdvbGQlMjBsaWdodGluZ3xlbnwwfHx8fDE3OTA4NTY3MTB8MA&ixlib=rb-4.1.0&q=85",
+    "polaroid_1": "https://images.unsplash.com/photo-1617643049318-7f73bd9ea818?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHw0fHxjb3p5JTIwYWVzdGhldGljJTIwcHVycGxlJTIwc3Vuc2V0JTIwc3RhcnJ5JTIwbWVtb3JpZXMlMjBwb2xhcm9pZCUyMGZyYW1lJTIwcGhvdG98ZW58MHx8fHwxNzkwODU2NzE4fDA&ixlib=rb-4.1.0&q=85",
+    "polaroid_2": "https://images.unsplash.com/photo-1619045119136-349759036541?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxjb3p5JTIwYWVzdGhldGljJTIwcHVycGxlJTIwc3Vuc2V0JTIwc3RhcnJ5JTIwbWVtb3JpZXMlMjBwb2xhcm9pZCUyMGZyYW1lJTIwcGhvdG98ZW58MHx8fHwxNzkwODU2NzE4fDA&ixlib=rb-4.1.0&q=85",
+    "polaroid_3": "https://images.unsplash.com/photo-1617643049077-7e2e755c8b8c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxjb3p5JTIwYWVzdGhldGljJTIwcHVycGxlJTIwc3Vuc2V0JTIwc3RhcnJ5JTIwbWVtb3JpZXMlMjBwb2xhcm9pZCUyMGZyYW1lJTIwcGhvdG98ZW58MHx8fHwxNzkwODU2NzE4fDA&ixlib=rb-4.1.0&q=85",
+    "polaroid_4": "https://images.unsplash.com/photo-1518223252784-6ff7ee720ed0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxjdXRlJTIwcGx1c2glMjB0ZWRkeSUyMGJlYXIlMjB2aW50YWdlJTIwY296eSUyMHB1cnBsZSUyMGdvbGQlMjBsaWdodGluZ3xlbnwwfHx8fDE3OTA4NTY3MTB8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "accessibility_and_performance": {
+    "prefers_reduced_motion": "Detect window.matchMedia('(prefers-reduced-motion: reduce)') to replace rapid particle explosions and heavy 3D rotations with gentle opacity fades and static high-contrast layouts.",
+    "performance": "Use HTML5 Canvas or Hardware-Accelerated CSS transform/opacity for particles to maintain 60FPS. Avoid layout thrashing properties like top/left/width during scroll callbacks.",
+    "mobile_first": "Ensure all text fits inside mobile viewport (px-4/px-6), no clipping, polaroid frames fit in phone dimensions without overflow."
+  },
+  "testing_ids": {
+    "hero_title": "cecilia-hero-title",
+    "hero_subtitle": "cecilia-hero-subtitle",
+    "act1_editable_text": "act1-editable-text",
+    "scroll_hint": "scroll-hint-button",
+    "chapter1_portal": "chapter-portal",
+    "chapter2_teddy_frame": "chapter-teddy-frame",
+    "chapter3_polaroid_gallery": "chapter-polaroid-gallery",
+    "chapter4_climax_title": "chapter-climax-title",
+    "act3_final_message": "act3-final-message",
+    "music_player_toggle": "music-player-toggle-button",
+    "music_player_container": "music-player-container",
+    "photo_edit_button": "photo-edit-button"
+  },
+  "instructions_to_main_agent": "Read this file carefully. Implement the full 3-Act experience in React + Tailwind CSS + Framer Motion. Ensure fonts Fraunces and Baloo 2 are dynamically imported in index.html. Include data-testid attributes on all interactive elements. Maintain strict color fidelity to #180E29, #E8B34E, #E9DDF7. Preserve exact text content in pt-BR."
+}
