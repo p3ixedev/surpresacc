@@ -27,6 +27,12 @@ Criar um site de aniversário de página única, totalmente funcional e responsi
 - Correções: comprimento dos ranges do useTransform (Polaroid), ease de array não suportado (Burst), posthog original restaurado byte a byte no index.html, overflow-x: clip para não quebrar o sticky.
 - Verificado: desktop 1440x900 (hero, portal, revelação, galeria, clímax) e mobile 390x844 (hero, galeria, revelação com ursinho, final), overflow-x=false em todas as passadas, player testado com WAV real (tocou, barra avançou, botão virou pause).
 
+## Integração IA (ChatGPT) — backend-only (01/10/2026)
+- A pedido do usuário, a integração OpenAI/ChatGPT existe SOMENTE no backend — nenhum recurso de IA aparece no site da Cecília (resposta "nada" na coleta).
+- `POST /api/ai/generate` (SSE streaming): body `{"prompt": "...", "session_id": "opcional"}` → eventos `{"delta": ...}` e `{"done": true}`. Modelo `openai/gpt-6-luna` (usuário sem preferência; escolha minha).
+- Chave: `EMERGENT_LLM_KEY` (universal) em `/app/backend/.env`. Créditos saem do saldo da Universal Key (Profile → Manage plan → Universal Key → Add Balance).
+- Verificado com curl: resposta streamada token a token corretamente.
+
 ## Backlog / próximos (P0–P2)
 - P0: usuário substitui placeholders reais (fotos da galeria, textos definitivos, música).
 - P1: música de fundo real + talvez botão de volume.
