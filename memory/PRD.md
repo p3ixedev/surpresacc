@@ -23,12 +23,12 @@ Criar um site de aniversário de página única, totalmente funcional e responsi
 
 ## Implementado (01/10/2026…)
 - Todos os componentes acima, fontes, favicon, lenis, grão de cinema, marquee do Ato 3.
+- Ilustração ORIGINAL do ursinho com potinho de mel (etiqueta "Cecília") gerada por IA e conectada à moldura da revelação (`/images/ursinho.jpg` — substituível via `ursinhoImage`).
 - Correções: comprimento dos ranges do useTransform (Polaroid), ease de array não suportado (Burst), posthog original restaurado byte a byte no index.html, overflow-x: clip para não quebrar o sticky.
-- Verificado: desktop 1440x900 (hero, portal, revelação, galeria, clímax) e mobile 390x844 (hero, galeria, final), overflow-x=false em todas as passadas, player testado com WAV real (tocou, barra avançou, botão virou pause).
+- Verificado: desktop 1440x900 (hero, portal, revelação, galeria, clímax) e mobile 390x844 (hero, galeria, revelação com ursinho, final), overflow-x=false em todas as passadas, player testado com WAV real (tocou, barra avançou, botão virou pause).
 
 ## Backlog / próximos (P0–P2)
-- P0: usuário substitui placeholders reais (fotos, textos, música, imagem do ursinho).
-- P1: gerar/comissionar ilustração original do ursinho (usuário optou por placeholder nesta fase).
+- P0: usuário substitui placeholders reais (fotos da galeria, textos definitivos, música).
 - P1: música de fundo real + talvez botão de volume.
 - P2: compartilhar via WhatsApp com preview (og:image dedicada), contador de dias, cartinha em tela cheia no clímax.
 

@@ -20,8 +20,8 @@ export const birthdayContent = {
   openingText:
     "Hoje o mundo fica mais doce, porque é o seu dia. Respire fundo, ache o cantinho mais gostoso do seu coração e vem caminhar comigo pelas memórias que a gente já construiu — e por tudo que ainda vem por aí.",
 
-  // CAPÍTULO 2 — imagem do ursinho (ex.: "/images/ursinho.png" ou uma URL)
-  ursinhoImage: "[IMAGEM_URSINHO]",
+  // CAPÍTULO 2 — imagem do ursinho (ex.: "/images/ursinho.jpg" ou uma URL)
+  ursinhoImage: "/images/ursinho.jpg",
 
   // CAPÍTULO 3 — fotos da galeria em órbita
   galleryImages: [
